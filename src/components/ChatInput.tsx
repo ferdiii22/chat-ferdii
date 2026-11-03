@@ -52,7 +52,7 @@ export default function ChatInput({
 
 
   return (
-    <div className="border-t border-gray-200 dark:border-slate-800 pt-4">
+    <div className="border-t border-gray-200 dark:border-zinc-800 pt-4">
       <div className="relative flex items-end gap-3">
         <textarea
           ref={textareaRef}
@@ -64,12 +64,12 @@ export default function ChatInput({
           placeholder="Tanya apa aja, asal jangan tanya kapan kiamat"
           disabled={isLoading}
           rows={1}
-          className="flex-1 p-3 text-sm md:text-base rounded-lg border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 resize-none max-h-[120px] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex-1 p-3 text-sm md:text-base rounded-lg border border-gray-300 dark:border-zinc-700 bg-white dark:bg-[#202326] text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-teal-500 resize-none max-h-[120px] disabled:opacity-50 disabled:cursor-not-allowed"
         />
         <button
           onClick={handleSend}
           disabled={!input.trim() || isLoading}
-          className="px-4 py-3 bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+          className="px-4 py-3 bg-gray-800 hover:bg-gray-700 dark:bg-teal-600 dark:hover:bg-teal-500 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
         >
           {isLoading ? (
             <i className="fas fa-spinner animate-spin"></i>
@@ -79,7 +79,7 @@ export default function ChatInput({
         </button>
       </div>
       <div className="text-xs text-gray-500 dark:text-gray-400 mt-6 text-center space-y-1">
-        <p>“SontoloyoAI is just an AI, so it can make mistakes.”</p>
+        <p>“Ferdii-AI-Asissten adalah AI dan bisa saja membuat kesalahan.”</p>
         <p>© 2026 Hak Cipta Dilindungi.</p>
         <p>
           Developed by{' '}
@@ -87,7 +87,7 @@ export default function ChatInput({
             href="https://adi-muhamad.my.id"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-colors"
+            className="text-gray-700 dark:text-teal-300 hover:text-gray-900 dark:hover:text-teal-200 hover:underline transition-colors"
           >
             adi-muhamad.my.id
           </a>

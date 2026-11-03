@@ -10,7 +10,7 @@ export async function GET() {
       JSON.stringify({
         status: dbHealthy ? 'healthy' : 'degraded',
         timestamp: new Date().toISOString(),
-        service: 'AI Assistant Sontoloyo API',
+        service: 'Ferdii-AI-Asissten API',
         database: dbHealthy ? 'connected' : 'disconnected',
         version: '1.0.0',
       }),
@@ -25,7 +25,7 @@ export async function GET() {
       JSON.stringify({
         status: 'unhealthy',
         timestamp: new Date().toISOString(),
-        service: 'AI Assistant Sontoloyo API',
+        service: 'Ferdii-AI-Asissten API',
         database: 'error',
         error: error instanceof Error ? error.message : 'Unknown error',
       }),

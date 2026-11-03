@@ -11,7 +11,7 @@
 3. [Arsitektur & Konfigurasi Masing-Masing Aplikasi](#3-arsitektur--konfigurasi-masing-masing-aplikasi)
    - [A. WordPress Blog (`adi-muhamad.my.id`)](#a-wordpress-blog)
    - [B. Exam AI System (`exam.adi-muhamad.my.id`)](#b-exam-ai-system)
-   - [C. Chatbot Sontoloyo AI (`chat.adi-muhamad.my.id`)](#c-chatbot-sontoloyo-ai)
+   - [C. Ferdii-AI-Asissten (`chat.adi-muhamad.my.id`)](#c-ferdii-ai-asissten)
 4. [Pemetaan Cloudflare Tunnel (LXC 100)](#4-pemetaan-cloudflare-tunnel-lxc-100)
 5. [Pencegahan Masalah & Troubleshooting Penting](#5-pencegahan-masalah--troubleshooting-penting)
    - [Masalah Kapasitas Disk (Pelajaran Insiden MariaDB)](#a-kapasitas-disk--lvm)
@@ -131,7 +131,7 @@ INTERNET
 
 ---
 
-### C. Chatbot Sontoloyo AI
+### C. Ferdii-AI-Asissten
 - **Lokasi Project**: `/home/adi/chat-adimuhamad`
 - **Domain Publik**: [https://chat.adi-muhamad.my.id/](https://chat.adi-muhamad.my.id/)
 - **Target Ingress Tunnel**: `http://192.168.1.102:3001`
@@ -172,7 +172,7 @@ ingress:
   - hostname: exam.adi-muhamad.my.id
     service: http://192.168.1.102:80
 
-  # 3. Chatbot Sontoloyo AI
+  # 3. Ferdii-AI-Asissten
   - hostname: chat.adi-muhamad.my.id
     service: http://192.168.1.102:3001
 

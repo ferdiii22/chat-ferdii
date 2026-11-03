@@ -110,7 +110,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col w-full bg-gray-50 dark:bg-slate-900" style={{ height: '100dvh' }}>
+    <div className="flex flex-col w-full bg-gray-100 dark:bg-[#111315]" style={{ height: '100dvh' }}>
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
       <main
         className="flex-1 max-w-4xl w-full mx-auto px-4 py-4 flex flex-col"

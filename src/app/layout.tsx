@@ -2,16 +2,16 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Sontoloyo AI',
+  title: 'Ferdii-AI-Asissten',
   description:
-    'Sontoloyo AI untuk blog chat.adi-muhamad.my.id',
+    'Ferdii-AI-Asissten, teman AI untuk menjawab pertanyaan Anda.',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Sontoloyo AI',
+    title: 'Ferdii-AI-Asissten',
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: '/icons/icon-192x192.png',
     apple: '/icons/icon-180x180.png',
   },
 };
@@ -33,13 +33,13 @@ export default function RootLayout({
     <html lang="id" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
-        <meta name="theme-color" content="#2563eb" />
+        <meta name="theme-color" content="#f5f5f5" />
         <meta name="description" content={metadata.description as string} />
         {/* PWA Meta Tags */}
         <link rel="manifest" href="/manifest.json" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="Sontoloyo AI" />
+        <meta name="apple-mobile-web-app-title" content="Ferdii-AI-Asissten" />
         <link rel="apple-touch-icon" href="/icons/icon-180x180.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png" />
@@ -49,7 +49,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100 transition-colors duration-300">
+      <body className="bg-gray-100 text-gray-900 dark:bg-[#111315] dark:text-gray-100 transition-colors duration-300">
         {children}
       </body>
     </html>

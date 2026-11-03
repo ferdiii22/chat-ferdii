@@ -22,7 +22,7 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#0f172a',
+                        primary: '#27272a',
                     }
                 }
             }
@@ -34,7 +34,7 @@
     <nav class="border-b border-gray-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-10">
         <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="bg-blue-600 p-2 rounded-lg text-white">
+                <div class="bg-gray-800 dark:bg-teal-700 p-2 rounded-lg text-white">
                     <i class="fas fa-robot text-xl"></i>
                 </div>
                 <div>
@@ -53,7 +53,7 @@
         <div id="chat-window" class="chat-container overflow-y-auto space-y-6 pr-2">
             
             <div class="flex gap-4 mb-8">
-                <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white shrink-0">
+                <div class="w-8 h-8 rounded-full bg-gray-700 dark:bg-teal-700 flex items-center justify-center text-white shrink-0">
                     <i class="fas fa-robot text-xs"></i>
                 </div>
                 <div class="bg-white dark:bg-slate-800 p-4 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 dark:border-slate-700 max-w-[80%]">
@@ -70,8 +70,8 @@
         <div class="max-w-5xl mx-auto">
             <div class="relative flex items-center">
                 <input type="text" id="user-input" placeholder="Tanyakan sesuatu tentang SOP..." 
-                    class="w-full p-4 pr-12 rounded-xl border border-gray-300 dark:border-slate-700 bg-gray-50 dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600 transition-all">
-                <button id="send-btn" class="absolute right-3 p-2 text-blue-600 hover:text-blue-700 dark:text-blue-400">
+                    class="w-full p-4 pr-12 rounded-xl border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-teal-500 transition-all">
+                <button id="send-btn" class="absolute right-3 p-2 text-gray-700 hover:text-gray-900 dark:text-teal-300">
                     <i class="fas fa-paper-plane text-xl"></i>
                 </button>
             </div>
@@ -114,10 +114,10 @@
             msgDiv.className = `flex gap-4 ${isUser ? 'flex-row-reverse' : ''}`;
             
             msgDiv.innerHTML = `
-                <div class="w-8 h-8 rounded-full ${isUser ? 'bg-slate-700' : 'bg-blue-600'} flex items-center justify-center text-white shrink-0">
+                <div class="w-8 h-8 rounded-full ${isUser ? 'bg-slate-700' : 'bg-gray-700 dark:bg-teal-700'} flex items-center justify-center text-white shrink-0">
                     <i class="fas ${isUser ? 'fa-user' : 'fa-robot'} text-xs"></i>
                 </div>
-                <div class="${isUser ? 'bg-blue-600 text-white' : 'bg-white dark:bg-slate-800'} p-4 rounded-2xl ${isUser ? 'rounded-tr-none' : 'rounded-tl-none'} shadow-sm border ${isUser ? 'border-blue-500' : 'border-gray-100 dark:border-slate-700'} max-w-[80%]">
+                <div class="${isUser ? 'bg-gray-800 dark:bg-teal-700 text-white' : 'bg-white dark:bg-slate-800'} p-4 rounded-2xl ${isUser ? 'rounded-tr-none' : 'rounded-tl-none'} shadow-sm border ${isUser ? 'border-gray-700 dark:border-teal-600' : 'border-gray-100 dark:border-slate-700'} max-w-[80%]">
                     <p class="text-sm leading-relaxed">${text}</p>
                 </div>
             `;

@@ -1,13 +1,13 @@
 {
-  "name": "Sontoloyo AI",
-  "short_name": "Sontoloyo AI",
-  "description": "Sontoloyo AI - AI Chatbot untuk blog adi-muhamad.my.id",
+  "name": "Ferdii-AI-Asissten",
+  "short_name": "Ferdii AI",
+  "description": "Ferdii-AI-Asissten, teman AI untuk menjawab pertanyaan Anda.",
   "display": "standalone",
   "start_url": "/",
   "scope": "/",
   "orientation": "portrait",
-  "theme_color": "#2563eb",
-  "background_color": "#0f172a",
+  "theme_color": "#f5f5f5",
+  "background_color": "#111315",
   "categories": ["productivity", "utilities"],
   "icons": [
     {

@@ -1,6 +1,6 @@
-# 🚀 Blog Assistant - Personal AI Chatbot
+# 🚀 Ferdii-AI-Asissten
 
-**Personal AI Assistant untuk Blog Adi Muhamad**  
+**Asisten AI personal untuk blog Adi Muhamad**
 **Tech Stack**: Next.js 16 + PostgreSQL + pgvector + OpenAI GPT-4o mini + Docker + Cloudflare Tunnel
 
 ---
